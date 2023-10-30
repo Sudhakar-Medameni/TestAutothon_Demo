@@ -1,0 +1,25 @@
+﻿
+launchInsta
+
+instaPost
+
+
+to launchInsta
+	("Apps/Instagram/Mobile").launchInsta
+end launchInsta
+
+to instaPost
+	("Apps/Instagram/Mobile").postintoInsta
+	("Apps/Instagram/Mobile").selectImg 
+end instaPost
+
+
+
+(*("Apps/Instagram/Mobile").postintoInsta
+
+("Apps/Instagram/Mobile").selectImg "Post2"
+
+
+("Apps/Instagram/Mobile").postintoInsta
+
+("Apps/Instagram/Mobile").selectImg "Post3"*)

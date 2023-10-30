@@ -1,0 +1,25 @@
+﻿--to launch web app---
+
+to handle launchUrl browser, URL,Validation
+	put browser into global browser
+	set the SearchRectangle to config().SUT.(global browser)
+	typetext windowsKey,"r"
+	waitfor 10, text: "Run"
+	typetext global browser&&URL,return
+	wait 1
+	waitfor 10,text:Validation
+end launchUrl
+
+
+
+to closeBrowser
+	typetext controlkey,shiftkey,"w"
+	wait 2
+end closeBrowser
+
+
+to handle openBrowser myBrowser,URL
+	typetext windowsKey,"r"
+	waitfor 20, {text:"Type the name"}
+	typetext myBrowser&&URL,returnKey
+end openBrowser

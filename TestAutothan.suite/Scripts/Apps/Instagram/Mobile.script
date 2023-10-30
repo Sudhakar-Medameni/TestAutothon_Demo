@@ -1,0 +1,55 @@
+﻿to postintoInsta
+	click image:"InstaAccount"
+	wait .5
+	WaitFor 30, text:"Edit Profile"
+	click image:"Addpost"
+	wait .5
+	WaitFor 30, text:"Create"
+	
+	click image:"PostIcon"
+	wait 2
+end postintoInsta
+
+to launchInsta
+	("Apps/Twitter/mobile")'s launchApplication "com.instagram.android"
+end launchInsta
+
+to handle connectSUT
+	Connect {
+		name:"Samsung",
+		type:"Mobile Device",
+		deviceId: "RF8N315319K",
+	}
+end connectSUT
+
+
+
+
+to selectImg 
+
+	WaitFor 30, text:"Recents"
+	wait .5
+	click FoundImageLocation()
+	click text:"Camera"
+	wait.5
+	Click Image:"Post1"
+	wait .5
+	click image:"SelectMultipleimg"
+	
+	
+	Click Image:"Post2"
+	wait .5
+	Click Image:"Post3"
+	wait .5
+	
+	click image:"NextIcon"
+	wait .5
+	click image:"NextIcon"
+	WaitFor 20, text:"New post"
+	
+	click text:"write a caption"
+	typetext "#TESTAUTOTHON2023"
+	
+	click image:"NextIcon"
+	
+end selectImg

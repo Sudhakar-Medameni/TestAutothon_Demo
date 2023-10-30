@@ -1,0 +1,76 @@
+﻿launchApplication
+signIn
+userName
+password
+logIn
+post
+closeApplication
+
+to handle launchApplication
+	// launch twitter
+	os.launchUrl "Chrome", "twitter.com","Happening now"
+end launchApplication
+
+to handle signIn
+	// User Signin 
+	CommonHandlers.navigation "Sign in", "Sign in to X"	
+end signIn
+
+to handle userName
+	# enter username 
+	CommonHandlers.navigation "Phone, email, or username"
+	set global username to datafunctions.CollectData("username")
+	CommonHandlers.textEntry global username
+end userName
+
+to handle password
+	# enter password
+	CommonHandlers.navigation "Next", "Enter your password"
+	set global password to datafunctions.CollectData("password")
+	CommonHandlers.textEntry global password	
+end password
+
+to handle logIn
+	CommonHandlers.navigation "Log in", "Home"
+end logIn
+
+to handle post
+	set global NumberofPosts to datafunctions.CollectData("NumberofPosts")
+	repeat global NumberofPosts times
+		#  posting on twitter
+		CommonHandlers.navigation "What is happening?"
+		put post&repeatIndex() into postNum
+		set global Post to datafunctions.CollectData(postNum)
+		dateandtime
+		CommonHandlers.textEntry global Post &&global UniqueValues
+		insert global UniqueValues into universal UniqueValuesList
+		wait 2
+		CommonHandlers.navigation "Icons/Post"	
+		wait 2
+	end repeat
+end post
+
+to handle dateandtime
+	put now into UniqueValue
+	delete every occurrence of ","  in UniqueValue
+	delete every occurrence of ":"  in UniqueValue
+	delete every occurrence of " "  in UniqueValue
+	delete every occurrence of "+"  in UniqueValue
+	delete every occurrence of "-"  in UniqueValue
+	put UniqueValue into global UniqueValues	
+end dateandtime
+
+to handle closeApplication
+	CommonHandlers.logoutapp
+	os.closeBrowser
+	disconnectSUT
+end closeApplication
+
+to handle disconnectSUT
+	Disconnect "AWS"
+end disconnectSUT
+
+
+
+
+

@@ -1,0 +1,18 @@
+﻿
+launchTwitter
+searchpost
+
+
+
+
+to launchTwitter
+	("Apps/Twitter/mobile")'s launchApplication "com.twitter.android"
+end launchTwitter
+
+to takescreenshot
+	repeat universal UniqueValuesList times
+		("Apps/Twitter/mobile")'s searchpost 
+		("Apps/Twitter/mobile")'s captureSS	
+	end repeat
+end takescreenshot
+

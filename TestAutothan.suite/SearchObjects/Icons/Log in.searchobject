@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		932,
+		781,
+		56,
+		18
+	],
+	"lastmodifieddate": 1698646884.8610001,
+	"createddate": 1698646572.704,
+	"name": "Icons/Log in",
+	"lastfounddate": 1698646927.9790001,
+	"ocrcapturestring": "Login",
+	"lastfoundlocation": [
+		932,
+		781,
+		56,
+		18
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[28,9]",
+					"Tolerance": "_71",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Log in.png",
+				"connectionname": "SUT171",
+				"type": 1,
+				"connectionserverid": "192.168.1.171",
+				"capturerect": [
+					932,
+					781,
+					56,
+					18
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "Login"
+			}
+	]
+}

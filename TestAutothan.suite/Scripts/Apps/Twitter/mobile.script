@@ -1,0 +1,66 @@
+﻿
+to launchApplication packageName
+	LaunchApp packageName
+	wait 2
+	--CaptureScreen 
+end launchApplication
+
+
+
+to searchpost
+	click image:"SearchIcon"
+	wait .5
+	WaitFor 20, text:"Search X"
+	click FoundImageLocation()
+	typetext item repeatindex() of universal UniqueValuesList
+	wait .5
+	click image:"KeyboardaSearchIcon"
+end searchpost
+
+to captureSS
+	Click image:"accessibilityShortcut"
+	wait .5
+	click text: "Screenshots"
+	wait .5
+	click image:"CropIcon"
+	wait .5
+	dragNdrop
+	wait 2
+	dragNdropTop
+	wait 1
+	click image:"SaveSshot"
+	wait 1
+	click image:"backIcon"
+end captureSS
+
+
+to dragNdrop
+	Drag image:"BottomRight"
+	wait .5
+	Drop image:"shareicon",hotspot:[80,120]
+end dragNdrop
+
+to dragNdropTop
+	Drag image:"TopRight"
+	wait .5
+	Drop image:"BlueTopRight",hotspot:[0,25]
+end dragNdropTop
+
+
+(*
+to searchPost PostName
+	click image:"Icons/Search"
+	wait .5
+	WaitFor 20, text:"Search X"
+	click FoundImageLocation()
+	typetext PostName
+	----
+	click image:"Icons/account"
+	wait .5
+	WaitFor 20, text:"Profile"
+	click FoundImageLocation()	
+end searchPost
+*)
+
+
+

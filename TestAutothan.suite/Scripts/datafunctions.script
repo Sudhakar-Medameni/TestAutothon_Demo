@@ -1,0 +1,20 @@
+﻿
+to handle CollectData ColumnHeading
+	Set MyExcelFile to {type:"excel",file:ResourcePath(Universal DataFile),name:Universal SheetName}
+	put the records of MyExcelFile into MyData
+	Set SelectedRow to item Universal MyRow of MyData
+	Return SelectedRow.(ColumnHeading)
+end CollectData
+
+to handle QueryData columnheading,MyValue
+	Set MyExcelFile to {type:"excel",file:ResourcePath(Universal DataFile),name:Universal SheetName}
+	return the records of MyExcelFile where (columnheading) is myValue
+end QueryData
+
+to handle MLQueryData columnheading,MyValue,ColumnHeading2,MyValue2
+	Set MyExcelFile to {type:"excel",file:ResourcePath(Universal DataFile),name:Universal SheetName}
+	Set myInfo to the records of MyExcelFile where (columnheading) is myValue AND (ColumnHeading2) is MyValue2
+	return MyInfo.(ColumnHeading)
+end MLQueryData
+
+QueryData "Post1","sudhakar"

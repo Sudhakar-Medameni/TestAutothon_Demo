@@ -1,0 +1,24 @@
+﻿to API_Post content
+	put ResourcePath("Post_a_Content_on_Twitter.exe") into PythonAPIExe
+	shell "c:\windows\system32\cmd.exe", "/c"&&PythonAPIExe&&quote&content&quote
+end API_Post
+
+to API_Post_4 
+	"Tests/Scenario".dateandtime
+	set global context to datafunctions.CollectData("Post4")
+	API_Post global context && Global UniqueValues
+	insert global UniqueValues into universal UniqueValuesList
+end API_Post_4
+
+to API_Post_5 
+	"Tests/Scenario".dateandtime
+	set global context to datafunctions.CollectData("Post5")
+	API_Post global context && Global UniqueValues
+	insert global UniqueValues into universal UniqueValuesList
+end API_Post_5
+
+
+API_Post_4 
+API_Post_5
+
+

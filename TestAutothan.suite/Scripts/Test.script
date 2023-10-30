@@ -1,0 +1,14 @@
+﻿
+to handle CollectData ColumnHeading
+	Set MyExcelFile to {type:"excel",file:ResourcePath(Universal DataFile),name:Universal SheetName}
+	put the records of MyExcelFile into MyData
+	Set SelectedRow to item Universal MyRow of MyData
+	Return SelectedRow.(ColumnHeading)
+end CollectData
+
+log CollectData("Username")
+
+
+set universal DataFile to "TestData.xlsx"
+set universal SheetName to "Sheet1"
+set Universal MyRow to random(1)
