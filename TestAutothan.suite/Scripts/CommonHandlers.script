@@ -39,6 +39,7 @@ end radioButtons
 
 to scrollforImgorText toFind
 	//to scroll to the required area in web SUT
+	
 	moveto the center of RemoteScreenRectangle()
 	if file (suiteinfo().imagesFolder&"/"&toFind&".png") exists
 		repeat until imagefound(0,image:toFind)
