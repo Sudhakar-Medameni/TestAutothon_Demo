@@ -1,14 +1,19 @@
-﻿launchApplication
-signIn
-userName
-password
-logIn
-post
-closeApplication
+﻿(**  
+Scenario - Handlers to Call the common Functions used in test (Web)
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
 
 to handle launchApplication
-	// launch twitter
+	// launch twitter	
+	set universal DataFile to "TestData.xlsx"
+	set universal SheetName to "Sheet1"
+	set Universal pageWait to 40
+	set Universal MyRow to random(1)
 	os.launchUrl "Chrome", "twitter.com","Happening now"
+	CaptureScreen {Name: "ApplicationHomeScreen"}	
 end launchApplication
 
 to handle signIn
@@ -17,24 +22,28 @@ to handle signIn
 end signIn
 
 to handle userName
-	# enter username 
+	//entering username 
+	set universal UniqueValuesList to empty
 	CommonHandlers.navigation "Phone, email, or username"
 	set global username to datafunctions.CollectData("username")
 	CommonHandlers.textEntry global username
 end userName
 
 to handle password
-	# enter password
+	//entering password
 	CommonHandlers.navigation "Next", "Enter your password"
 	set global password to datafunctions.CollectData("password")
 	CommonHandlers.textEntry global password	
 end password
 
 to handle logIn
+	//to perform the login operation
 	CommonHandlers.navigation "Log in", "Home"
+	CaptureScreen {Name: "UserHomeScreen"}	
 end logIn
 
 to handle post
+	//to create post
 	set global NumberofPosts to datafunctions.CollectData("NumberofPosts")
 	repeat global NumberofPosts times
 		#  posting on twitter
@@ -51,6 +60,7 @@ to handle post
 end post
 
 to handle dateandtime
+	//function to append date and time
 	put now into UniqueValue
 	delete every occurrence of ","  in UniqueValue
 	delete every occurrence of ":"  in UniqueValue
@@ -61,15 +71,11 @@ to handle dateandtime
 end dateandtime
 
 to handle closeApplication
+	//to close the web browser
 	CommonHandlers.logoutapp
+	CaptureScreen {Name: "ApplicationHomeScreenAfterLogout"}	
 	os.closeBrowser
-	disconnectSUT
 end closeApplication
-
-to handle disconnectSUT
-	Disconnect "AWS"
-end disconnectSUT
-
 
 
 

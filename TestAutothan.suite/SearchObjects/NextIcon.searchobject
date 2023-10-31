@@ -1,58 +1,58 @@
 {
-	"lastmodifieddate": 1692769770.4419999,
+	"lastmodifieddate": 1692816769.75,
 	"lastfoundlocation": [
-		795,
-		109,
-		189,
-		112
+		904,
+		117,
+		132,
+		85
 	],
 	"originalcapturelocation": [
-		795,
-		109,
-		189,
-		112
+		928,
+		117,
+		132,
+		85
 	],
-	"createddate": 1692769770.4419999,
-	"lastfounddate": 1692817386.3270001,
+	"createddate": 1692816769.75,
+	"lastfounddate": 1692817405.402,
 	"testlocationdata": [
 		{
-				"connectionportnum": 59691,
+				"connectionportnum": 58179,
 				"properties": {
 					"CropRectangle": "[0,0,0,0]",
 					"Rotate": 0,
 					"Scale": "    1",
-					"HotSpot": "[43,54]",
-					"Tolerance": "_45",
+					"HotSpot": "[66,42]",
+					"Tolerance": 41,
 					"Discrepancy": "_0",
-					"SearchType": "Tolerant of Background"
+					"SearchType": "Precise to Pixel"
 				},
 				"sutinfo": {
 					"model": "SM-G980F",
-					"webdriver_port": "59692",
+					"webdriver_port": "58181",
 					"remote_adb_port": "0",
 					"device_os": "android",
 					"manufacturer": "samsung",
 					"type": "kvsfa",
 					"architecture": "arm64-v8a",
-					"vnc_port": "59691",
+					"vnc_port": "58179",
 					"sdk": "30",
-					"android_version": "30",
+					"android_version": "11",
 					"CacheDir": "/data/local/tmp",
 					"remote_ip_addr": "localhost",
 					"serial": "RF8N315319K"
 				},
-				"name": "Addpost.png",
+				"name": "NextIcon.png",
 				"connectionname": "Samsung",
 				"type": 1,
 				"capturerect": [
-					795,
-					109,
-					189,
-					112
+					928,
+					117,
+					132,
+					85
 				],
 				"connectiontype": "Mobile Device",
 				"connectionserverid": "localhost"
 			}
 	],
-	"name": "Addpost2"
+	"name": "NextIcon"
 }

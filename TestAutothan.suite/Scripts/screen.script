@@ -1,9 +1,16 @@
-﻿function ScreenPart Portion
+﻿(**  
+screen - Handler for creating search rectangles.
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+function ScreenPart Portion
 
 	// Set up an easy-to-maintain property list that stores the necessary multipliers for the specified screen portion parameter value
 	
 	set screenPortions to {
-	
+		
 		TopHalf: ((0,0),(1,.5)),
 		
 		BottomHalf: ((0,.5),(1,1)),
@@ -39,5 +46,5 @@
 	end if
 	
 	return (the remoteScreenSize,the remotescreenSize) * multiplier
-
+	
 End ScreenPart
