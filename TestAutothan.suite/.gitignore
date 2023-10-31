@@ -1,6 +1,6 @@
 .DS_Store
 .timestamp
 .vamignore
-/.vam
+/.vam/
 *.suite/Results/
 /Results/
