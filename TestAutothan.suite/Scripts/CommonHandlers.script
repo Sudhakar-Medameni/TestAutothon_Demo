@@ -37,6 +37,7 @@ to radioButtons label, offset
 end radioButtons
 
 
+
 to scrollforImgorText toFind
 	//to scroll to the required area in web SUT
 	moveto the center of RemoteScreenRectangle()
