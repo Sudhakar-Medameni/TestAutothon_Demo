@@ -1,0 +1,60 @@
+{
+	"originalcapturelocation": [
+		336,
+		1542,
+		28,
+		21
+	],
+	"lastmodifieddate": 1692816575.404,
+	"createddate": 1692816575.404,
+	"name": "Repost",
+	"lastfounddate": 1692816822.8400002,
+	"ocrcapturestring": "tl",
+	"lastfoundlocation": [
+		335,
+		1541,
+		30,
+		23
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 58179,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[13,8]",
+					"Tolerance": "_1",
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "58181",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "58179",
+					"sdk": "30",
+					"android_version": "11",
+					"CacheDir": "/data/local/tmp",
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
+				},
+				"name": "Repost.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					336,
+					1542,
+					28,
+					21
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "tl"
+			}
+	]
+}

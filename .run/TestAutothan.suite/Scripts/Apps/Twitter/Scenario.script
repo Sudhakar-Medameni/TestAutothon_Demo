@@ -1,0 +1,22 @@
+﻿(**  
+Scenario - Handlers to Call the common Functions used in test (Twitter)
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+
+to launchTwitter
+	//calling the launch function
+	("Apps/Twitter/mobile")'s launchApplication "com.twitter.android"
+end launchTwitter
+
+to takescreenshot
+	//capturing the screenshots for all the posts posted through web and api
+	repeat the number of items of  universal UniqueValuesList times
+		put repeatIndex() into universal count
+		("Apps/Twitter/mobile")'s searchpost 
+		("Apps/Twitter/mobile")'s captureSS	
+	end repeat
+end takescreenshot
+

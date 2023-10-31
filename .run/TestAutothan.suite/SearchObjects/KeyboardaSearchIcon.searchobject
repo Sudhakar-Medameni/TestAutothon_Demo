@@ -1,0 +1,96 @@
+{
+	"lastmodifieddate": 1692815661.3930001,
+	"lastfoundlocation": [
+		947,
+		2106,
+		78,
+		99
+	],
+	"originalcapturelocation": [
+		947,
+		2106,
+		78,
+		99
+	],
+	"createddate": 1692815554.652,
+	"lastfounddate": 1692816230.642,
+	"testlocationdata": [
+		{
+				"connectionportnum": 58179,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[39,49]",
+					"Tolerance": 21,
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "58181",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "58179",
+					"sdk": "30",
+					"android_version": "11",
+					"CacheDir": "/data/local/tmp",
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
+				},
+				"name": "KeyboardaSearchIcon.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"capturerect": [
+					947,
+					2106,
+					78,
+					99
+				],
+				"connectiontype": "Mobile Device",
+				"connectionserverid": "localhost"
+			},
+		{
+				"connectionportnum": 58179,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[39,49]",
+					"Tolerance": 26,
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "58181",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "58179",
+					"sdk": "30",
+					"android_version": "11",
+					"CacheDir": "/data/local/tmp",
+					"remote_ip_addr": "localhost",
+					"serial": "RF8N315319K"
+				},
+				"name": "KeyboardaSearchIcon.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"capturerect": [
+					947,
+					2106,
+					78,
+					99
+				],
+				"connectiontype": "Mobile Device",
+				"connectionserverid": "localhost"
+			}
+	],
+	"name": "KeyboardaSearchIcon"
+}

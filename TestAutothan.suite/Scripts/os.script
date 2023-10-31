@@ -11,7 +11,11 @@ to handle launchUrl browser, URL,Validation
 	put browser into global browser
 	set the SearchRectangle to config().SUT.(global browser)
 	typetext windowsKey,"r"
-	waitfor 10, text: "Run"
+	
+	repeat until imagefound(text:"Run")
+		moveto[300,300]
+		MoveTo [300,350]
+	end repeat
 	typetext global browser&&URL,return
 	wait 1
 	--waitfor 10,text:Validation
