@@ -34,7 +34,6 @@ to radioButtons label, offset
 	put ImageLocation(text:label) into labelLocation
 	click labelLocation + offset
 	wait 0.5
-
 end radioButtons
 
 
