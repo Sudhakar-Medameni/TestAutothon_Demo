@@ -34,6 +34,7 @@ to radioButtons label, offset
 	put ImageLocation(text:label) into labelLocation
 	click labelLocation + offset
 	wait 0.5
+
 end radioButtons
 
 
@@ -102,11 +103,11 @@ to swipetoImgorText toFind
 			if repeatindex() > 10 then 
 				logerror "Cannot find"&&toFind
 				Exit repeat
-		end if
-	end repeat
-end if
-log FoundImageLocation()
-return FoundImageLocation()
+			end if
+		end repeat
+	end if
+	log FoundImageLocation()
+	return FoundImageLocation()
 end swipetoImgorText
 
 to verifyEvent verifyObject,successMsg,errorMsg	
@@ -121,7 +122,7 @@ end verifyEvent
 to logoutapp
 	//to logout from the application
 	set the SearchRectangle to screen.ScreenPart("BottomLeftQuadrant")
-CommonHandlers.navigation "Icons/Logout2", "Log out @TAutothon"
+	CommonHandlers.navigation "Icons/Logout2", "Log out @TAutothon"
 	set the  SearchRectangle to []
 	CommonHandlers.navigation "Log out @TAutothon", "Log out of X?"
 	CommonHandlers.navigation "Log out","Happening now"
