@@ -19,4 +19,3 @@ to takescreenshot
 		("Apps/Twitter/mobile")'s captureSS	
 	end repeat
 end takescreenshot
-
