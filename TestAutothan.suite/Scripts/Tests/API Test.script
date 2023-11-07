@@ -19,6 +19,7 @@ to API_Post_4
 	API_Post global context && Global UniqueValues
 	insert global UniqueValues into universal UniqueValuesList
 	wait 3
+	log "Tweet - 4 posted successfully"
 end API_Post_4
 
 to API_Post_5 
@@ -27,4 +28,5 @@ to API_Post_5
 	set global context to datafunctions.CollectData("Post5")
 	API_Post global context && Global UniqueValues
 	insert global UniqueValues into universal UniqueValuesList
+	log "Tweet - 5 posted successfully"
 end API_Post_5

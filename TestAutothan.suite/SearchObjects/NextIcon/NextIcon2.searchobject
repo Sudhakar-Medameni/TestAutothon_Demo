@@ -1,0 +1,58 @@
+{
+	"lastmodifieddate": 1699253033.346,
+	"lastfoundlocation": [
+		904,
+		117,
+		132,
+		85
+	],
+	"originalcapturelocation": [
+		928,
+		117,
+		132,
+		85
+	],
+	"createddate": 1699253033.346,
+	"lastfounddate": 1699275098.7610002,
+	"testlocationdata": [
+		{
+				"connectionportnum": 50988,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[66,42]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "50989",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "50988",
+					"sdk": "30",
+					"android_version": "11",
+					"CacheDir": "/data/local/tmp",
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
+				},
+				"name": "NextIcon/NextIcon2.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"capturerect": [
+					928,
+					117,
+					132,
+					85
+				],
+				"connectiontype": "Mobile Device",
+				"connectionserverid": "localhost"
+			}
+	],
+	"name": "NextIcon/NextIcon2"
+}

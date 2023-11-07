@@ -1,0 +1,56 @@
+﻿(**  
+Mobile - Handlers for the Common Functions used in test (Instagram)
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**) 
+
+
+to postintoInsta
+	// post content into instagram
+	click image:"InstaAccount"
+	wait .5
+	WaitFor 30, text:"Edit Profile"
+	click image:"Addpost"
+	wait .5
+	WaitFor 30, text:"Create"
+	click image:"PostIcon"
+	wait 2
+end postintoInsta
+
+to launchInsta
+	//launch native instagram on mobile
+	("Apps/Twitter/mobile")'s launchApplication "com.instagram.android"
+end launchInsta
+
+to handle connectSUT
+	//connecting to mobile SUT
+	Connect {
+		name:"Samsung",
+		type:"Mobile Device",
+		deviceId: "RF8N315319K",
+	}
+end connectSUT
+
+to killApplication
+	//close the instagram app
+	KillApp "com.instagram.android"
+end killApplication
+
+to selectImg 
+	//selecting the multiple images for adding to a post
+	WaitFor 30, text:"Recents"
+	wait .5
+	click image:"SelectMultipleimg"
+	put everyImageLocation(image:"Views") 	into viewsLoc
+	repeat with each item of viewsLoc
+		Click it
+	end repeat
+	click image:"NextIcon"
+	wait .5
+	click image:"NextIcon"
+	WaitFor 20, text:"New post"	
+	click text:"write a caption"
+	typetext "#TESTAUTOTHON2023"	
+	click image:"NextIcon"	
+end selectImg

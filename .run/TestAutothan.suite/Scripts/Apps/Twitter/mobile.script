@@ -1,0 +1,57 @@
+﻿
+(**  
+mobile - Handlers for the Common Functions used in test (twitter)
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+
+to launchApplication packageName
+	//launch native twitter app on mobile
+	LaunchApp packageName
+	wait 2
+end launchApplication
+
+to searchpost
+	//searching the post using search functionality
+	click image:"SearchIcon"
+	wait .5
+	WaitFor 20, text:"Search X"
+	click FoundImageLocation()
+	typetext item universal count of universal UniqueValuesList
+	wait .5
+	click image:"KeyboardaSearchIcon"
+end searchpost
+
+to captureSS
+	//capturing the required area of the created post
+	Click image:"accessibilityShortcut"
+	wait .5
+	click text: "Screenshots"
+	wait .5
+	click image:"CropIcon"
+	wait .5
+	dragNdrop
+	wait 2
+	dragNdropTop
+	wait 1
+	click image:"SaveSshot"
+	wait 1
+	click image:"backIcon"
+end captureSS
+
+to dragNdrop
+	//croping bottom of the image
+	Drag image:"BottomRight"
+	wait .5
+	Drop image:"shareicon",hotspot:[80,120]
+end dragNdrop
+
+to dragNdropTop
+	//croping top of the image
+	Drag image:"TopRight"
+	wait .5
+	Drop image:"BlueTopRight",hotspot:[0,25]
+end dragNdropTop
+

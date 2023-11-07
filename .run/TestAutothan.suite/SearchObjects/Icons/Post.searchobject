@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		1111,
+		333,
+		64,
+		36
+	],
+	"lastmodifieddate": 1692768019.059,
+	"createddate": 1692768019.059,
+	"name": "Icons/Post",
+	"lastfounddate": 1692816093.471,
+	"ocrcapturestring": "Post",
+	"lastfoundlocation": [
+		1111,
+		381,
+		64,
+		36
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[31,19]",
+					"Tolerance": "_66",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Icons/Post.png",
+				"connectionname": "AWS",
+				"type": 1,
+				"connectionserverid": "18.60.2.9",
+				"capturerect": [
+					1111,
+					333,
+					64,
+					36
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "Post"
+			}
+	]
+}

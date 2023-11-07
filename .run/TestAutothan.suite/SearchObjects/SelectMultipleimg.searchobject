@@ -1,0 +1,175 @@
+{
+	"originalcapturelocation": [
+		932,
+		1167,
+		129,
+		149
+	],
+	"lastmodifieddate": 1692816752.9099998,
+	"createddate": 1692774848.701,
+	"name": "SelectMultipleimg",
+	"lastfounddate": 1692817393.0580001,
+	"ocrcapturestring": "£  k 1 □ 1   F",
+	"lastfoundlocation": [
+		932,
+		1167,
+		129,
+		149
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 59691,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[64,74]",
+					"Tolerance": "_1",
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "59692",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "59691",
+					"sdk": "30",
+					"android_version": "30",
+					"CacheDir": "/data/local/tmp",
+					"remote_ip_addr": "localhost",
+					"serial": "RF8N315319K"
+				},
+				"name": "SelectMultipleimg.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					932,
+					1167,
+					129,
+					149
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "£  k 1 □ 1   F"
+			},
+		{
+				"connectionportnum": 59691,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[64,74]",
+					"Tolerance": 11,
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "59692",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "59691",
+					"sdk": "30",
+					"android_version": "30",
+					"CacheDir": "/data/local/tmp",
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
+				},
+				"name": "SelectMultipleimg.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					932,
+					1167,
+					129,
+					149
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "£  k 1 □ 1   F"
+			},
+		{
+				"connectionportnum": 56792,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[64,74]",
+					"Tolerance": 26,
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "56793",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "56792",
+					"sdk": "30",
+					"android_version": "11",
+					"CacheDir": "/data/local/tmp",
+					"remote_ip_addr": "localhost",
+					"serial": "RF8N315319K"
+				},
+				"name": "SelectMultipleimg.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"capturerect": [
+					932,
+					1167,
+					129,
+					149
+				],
+				"connectiontype": "Mobile Device",
+				"connectionserverid": "localhost"
+			},
+		{
+				"connectionportnum": 58179,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[64,74]",
+					"Tolerance": 66,
+					"Discrepancy": "_0",
+					"SearchType": "Precise to Pixel"
+				},
+				"sutinfo": {
+					"model": "SM-G980F",
+					"webdriver_port": "58181",
+					"remote_adb_port": "0",
+					"device_os": "android",
+					"manufacturer": "samsung",
+					"type": "kvsfa",
+					"architecture": "arm64-v8a",
+					"vnc_port": "58179",
+					"sdk": "30",
+					"android_version": "11",
+					"CacheDir": "/data/local/tmp",
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
+				},
+				"name": "SelectMultipleimg.png",
+				"connectionname": "Samsung",
+				"type": 1,
+				"capturerect": [
+					932,
+					1167,
+					129,
+					149
+				],
+				"connectiontype": "Mobile Device",
+				"connectionserverid": "localhost"
+			}
+	]
+}

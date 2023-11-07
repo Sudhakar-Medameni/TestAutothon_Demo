@@ -17,6 +17,8 @@ to searchpost
 	//searching the post using search functionality
 	click image:"SearchIcon"
 	wait .5
+	typetext backspace
+	wait .5
 	WaitFor 20, text:"Search X"
 	click FoundImageLocation()
 	typetext item universal count of universal UniqueValuesList

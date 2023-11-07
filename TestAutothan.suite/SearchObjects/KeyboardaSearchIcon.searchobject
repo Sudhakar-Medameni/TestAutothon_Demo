@@ -13,7 +13,7 @@
 		99
 	],
 	"createddate": 1692815554.652,
-	"lastfounddate": 1692816230.642,
+	"lastfounddate": 1699275044.2220001,
 	"testlocationdata": [
 		{
 				"connectionportnum": 58179,
@@ -38,8 +38,8 @@
 					"sdk": "30",
 					"android_version": "11",
 					"CacheDir": "/data/local/tmp",
-					"serial": "RF8N315319K",
-					"remote_ip_addr": "localhost"
+					"remote_ip_addr": "localhost",
+					"serial": "RF8N315319K"
 				},
 				"name": "KeyboardaSearchIcon.png",
 				"connectionname": "Samsung",
@@ -76,8 +76,8 @@
 					"sdk": "30",
 					"android_version": "11",
 					"CacheDir": "/data/local/tmp",
-					"remote_ip_addr": "localhost",
-					"serial": "RF8N315319K"
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
 				},
 				"name": "KeyboardaSearchIcon.png",
 				"connectionname": "Samsung",

@@ -1,0 +1,19 @@
+﻿(**  
+Testcase - Handlers to Call the common Functions used in test (Instagram)
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+to launchInsta
+	//calling the launch function
+	("Apps/Instagram/Mobile").launchInsta
+end launchInsta
+
+to instaPost
+	//calling the functions for creating a post and close the application
+	("Apps/Instagram/Mobile").postintoInsta
+	("Apps/Instagram/Mobile").selectImg 
+	CaptureScreen {Name: "AfterCreatingPost"}	
+	("Apps/Instagram/Mobile").killApplication
+end instaPost

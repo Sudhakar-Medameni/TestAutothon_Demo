@@ -43,6 +43,7 @@ to handle logIn
 end logIn
 
 to handle post
+	set temp to 0
 	//to create post
 	set global NumberofPosts to datafunctions.CollectData("NumberofPosts")
 	repeat global NumberofPosts times
@@ -56,6 +57,17 @@ to handle post
 		wait 2
 		CommonHandlers.navigation "Icons/Post"	
 		wait 2
+		
+		
+		#validating the tweet
+		set temp to temp + 1
+		
+		if ImageFound(text:global UniqueValues, waitFor:20) then 
+			log "Tweet - "&temp&" posted successfully"
+		else 
+			LogError "Tweet - "&temp&" not posted"
+			
+		end if
 	end repeat
 end post
 
@@ -79,4 +91,9 @@ end closeApplication
 
 
 
-
+launchApplication
+signIn
+userName
+password
+logIn
+post

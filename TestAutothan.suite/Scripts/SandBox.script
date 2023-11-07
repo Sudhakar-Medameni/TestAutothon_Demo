@@ -32,6 +32,8 @@ Run "Tests/Scenario".launchApplication
 Run "Tests/Scenario".signIn
 
 
+Apps/Twitter/Scenario.script:takescreenshot
+
 
 Tests/Scenario.script:userName
 

@@ -8,11 +8,11 @@
 	"lastmodifieddate": 1692817341.0679998,
 	"createddate": 1692816953.474,
 	"name": "Views",
-	"lastfounddate": 1692817394.0320001,
+	"lastfounddate": 1699254112.8369999,
 	"ocrcapturestring": "ill",
 	"lastfoundlocation": [
-		1041,
-		1541,
+		491,
+		1545,
 		12,
 		23
 	],
@@ -40,8 +40,8 @@
 					"sdk": "30",
 					"android_version": "11",
 					"CacheDir": "/data/local/tmp",
-					"serial": "RF8N315319K",
-					"remote_ip_addr": "localhost"
+					"remote_ip_addr": "localhost",
+					"serial": "RF8N315319K"
 				},
 				"name": "Views/Views.png",
 				"connectionname": "Samsung",

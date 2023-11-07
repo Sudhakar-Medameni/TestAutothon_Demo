@@ -1,0 +1,17 @@
+﻿(**  
+config - Content related to AUT/SUT configuration
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+//to return the config data
+return {
+	SUT:{
+		chrome:[0,73,1919,1035],
+		firefox:[0,88,1920,1040],
+		microsoftedge:[0,74,1919,1039]
+
+	}
+}
+Log "Configs-2"

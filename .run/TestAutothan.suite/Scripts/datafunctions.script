@@ -1,0 +1,15 @@
+﻿(**  
+datafunctions - Handlers for the Data Driven Testing
+@Version 1.0 23/08/2023 
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+to handle CollectData ColumnHeading
+	//to retrive the single cell value using column header
+	Set MyExcelFile to {type:"excel",file:ResourcePath(Universal DataFile),name:Universal SheetName}
+	put the records of MyExcelFile into MyData
+	Set SelectedRow to item Universal MyRow of MyData
+	Return SelectedRow.(ColumnHeading)
+end CollectData
+
