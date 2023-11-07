@@ -13,7 +13,7 @@
 		45
 	],
 	"createddate": 1692815586.3429999,
-	"lastfounddate": 1699275052.112,
+	"lastfounddate": 1699349007.296,
 	"testlocationdata": [
 		{
 				"connectionportnum": 58179,
@@ -38,8 +38,8 @@
 					"sdk": "30",
 					"android_version": "11",
 					"CacheDir": "/data/local/tmp",
-					"remote_ip_addr": "localhost",
-					"serial": "RF8N315319K"
+					"serial": "RF8N315319K",
+					"remote_ip_addr": "localhost"
 				},
 				"name": "shareicon.png",
 				"connectionname": "Samsung",
@@ -76,8 +76,8 @@
 					"sdk": "30",
 					"android_version": "11",
 					"CacheDir": "/data/local/tmp",
-					"serial": "RF8N315319K",
-					"remote_ip_addr": "localhost"
+					"remote_ip_addr": "localhost",
+					"serial": "RF8N315319K"
 				},
 				"name": "shareicon.png",
 				"connectionname": "Samsung",
